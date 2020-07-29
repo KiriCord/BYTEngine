@@ -8,6 +8,7 @@ class GameObject
     private:
         std::string nameObject;
         Vector2 position;
+        Vector2 direction;
     public:
     
     GameObject();
