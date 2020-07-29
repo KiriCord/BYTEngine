@@ -15,8 +15,8 @@ At least, nothing yet. But it will grow!
 + Visual Studio Code
 + Makefile
 + C++
-+ A littble bit magic
-+ and Google (ofcorse, how without it?)
++ A little bit magic
++ and Google (of corse, how without it?)
 
 ## Our plans
 
