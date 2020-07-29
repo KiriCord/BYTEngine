@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "./Physics/math/vector2.h"
+#include "bin/Engine/Physics/math/vector2.hpp"
 
 class GameObject
 {
