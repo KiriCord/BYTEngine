@@ -2,21 +2,18 @@
 
 #include <cmath>
 
+
 class Math {
     public:
-    const float PI = acos(-1.0);
-    const float DEG_TO_RAD = PI / 180;
-    const float RAD_TO_DEG = 180 / PI;
+    const double PI = acos(-1.0);
+    const double DEG_TO_RAD = PI / 180;
+    const double RAD_TO_DEG = 180 / PI;
 
-    template<typename T>
-    static T sign(T value) {
-        if (value > 0) {
-            return 1;
-        }
-        else {
-            return -1;
-        }
-        return 0;
+    static int sign(float value) {
+        if (value == 0)
+            return 0;
+
+        return value > 0 ? 1: -1;        
     }
 
     float deg(float rad) {
