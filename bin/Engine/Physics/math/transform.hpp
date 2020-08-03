@@ -1,4 +1,4 @@
-#pragma one
+#pragma onсe
 
 #include "vector2.hpp"
 

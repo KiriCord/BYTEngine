@@ -1,5 +1,4 @@
 #include "vector2.hpp"
-#include "bin/Engine/Physics/extensions.cpp"
 
 Vector2::Vector2() : x(0), y(0) {}
 
@@ -62,6 +61,14 @@ void Vector2::operator/=(const Vector2 &vector)
     x /= vector.x;
     y /= vector.y;
 }
+
+bool Vector2::operator==(const Vector2 &vector) const {
+    return x == vector.x && y == vector.y;
+}
+
+bool Vector2::operator!=(const Vector2 &vector) const {
+    return x != vector.x || y != vector.y;
+} 
 
 /*Vector2 Vector2::rotate(float degree){      Moved rotate to transform
     double rads = toRad(degree);
