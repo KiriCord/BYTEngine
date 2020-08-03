@@ -63,9 +63,9 @@ void Vector2::operator/=(const Vector2 &vector)
     y /= vector.y;
 }
 
-Vector2 Vector2::rotate(float degree){
+/*Vector2 Vector2::rotate(float degree){      Moved rotate to transform
     double rads = toRad(degree);
 
     
 
-}
+}*/

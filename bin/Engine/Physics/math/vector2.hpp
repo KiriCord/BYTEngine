@@ -31,7 +31,7 @@ public:
     bool operator==(const Vector2& vector) const;
     bool operator!=(const Vector2& vector) const;
 
-	Vector2 Vector2::rotate(float degree);
+	//Vector2 Vector2::rotate(float degree);     Moved rotate to transform
 
     //Print
     friend std::ostream& operator<<( std::ostream& is,const Vector2& vector);
