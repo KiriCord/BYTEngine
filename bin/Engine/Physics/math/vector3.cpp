@@ -18,7 +18,7 @@ float Vector3::magnitude()
 }
 
 // Vector function
-Vector3 Vectormulty (const Vector3& vector1, const Vector3& vector2)
+Vector3 Vectormulty(const Vector3& vector1, const Vector3& vector2)
 {
     Vector3 result;
     result.x = vector1.y * vector2.z - vector1.z * vector2.y;

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-class Vector3
+struct Vector3
 {
     float x, y, z;
 
@@ -19,7 +19,7 @@ class Vector3
     float magnitude();
     
 // funtions
-    Vector3 Vectormulty (const Vector3& vector1, const Vector3& vector2);
+    Vector3 Vectormulty(const Vector3& vector1, const Vector3& vector2);
 
 
     //Vector3 by Vector3
