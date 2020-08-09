@@ -17,6 +17,10 @@ class Vector3
     Vector3 normalize();
 
     float magnitude();
+    
+// funtions
+    Vector3 Vectormulty (const Vector3& vector1, const Vector3& vector2);
+
 
     //Vector3 by Vector3
     Vector3 operator+(const Vector3& vector) const;

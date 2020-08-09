@@ -17,6 +17,8 @@ float Vector2::magnitude()
     return sqrt(x * x + y * y);
 }
 
+//Functions
+
 // Scalar function
 float Scalarmulty (const Vector2& vector1, const Vector2& vector2)
 {
