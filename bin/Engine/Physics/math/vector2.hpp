@@ -18,6 +18,9 @@ public:
 
     float magnitude();
 
+    // Functions 
+    float Scalarmulty (const Vector2& vector1, const Vector2& vector2);
+
     //Vector2 by Vector2
     Vector2 operator+(const Vector2& vector) const;
     Vector2 operator-(const Vector2& vector) const;

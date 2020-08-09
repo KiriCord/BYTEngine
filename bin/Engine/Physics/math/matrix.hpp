@@ -2,8 +2,8 @@
 #include "vector3.hpp"
 
 class Matrix {
-    //float matrix[2][2];
-    Vector2 matrix[2][2];
+    //float matrix[2];
+    Vector2 matrix[2];
     //static Matrix
 
     public:
