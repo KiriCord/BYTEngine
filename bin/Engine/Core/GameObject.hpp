@@ -9,7 +9,8 @@ class GameObject
         std::string nameObject;
         Vector2 position;
         Vector2 direction;
-        Vector2 rotate;
+        Vector2 rotation;
+        Vector2 scale;
     public:
     
     GameObject();

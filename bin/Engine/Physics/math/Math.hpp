@@ -9,6 +9,15 @@ class Math {
     const double DEG_TO_RAD = PI / 180;
     const double RAD_TO_DEG = 180 / PI;
 
+    static int clamp(float value, float low, float high) {
+        if(value < low) {
+            return low;
+        } else if (value > high) {
+            return high;
+        }
+        return value;
+    }
+
     static int sign(float value) {
         if (value == 0)
             return 0;
