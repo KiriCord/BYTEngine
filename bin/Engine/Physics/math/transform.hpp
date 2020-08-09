@@ -7,7 +7,15 @@ class Transform
     public:
     Transform(const Vector2 &position, const Vector2 &scale);
     ~Transform();
-    Transform &rotate(const Vector2 &axis, float angle);
+    //Transform &rotate(const Vector2 &axis, float angle);
+    Vector2 &rotate(const Vector2 &point, float angle)
+    {
+           Vector2 rotated_point;
+           rotated_point.x = point.x * cos(angle) - point.y * sin(angle);
+           rotated_point.y = point.x * sin(angle) + point.y * cos(angle);
+           return rotated_point;
+    } 
+
     Transform &scale(float scale);
     Transform &scale(const Vector2 &scale);
     Transform &translate(const Vector2 &position);
