@@ -12,7 +12,8 @@ class Math {
     static int clamp(float value, float low, float high) {
         if(value < low) {
             return low;
-        } else if (value > high) {
+        }
+        if (value > high) {
             return high;
         }
         return value;
