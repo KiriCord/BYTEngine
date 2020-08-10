@@ -8,8 +8,8 @@ Vector3::Vector3(float num) : x(num), y(num), z(num) {}
 
 Vector3 Vector3::normalize()
 {
-    float normal_scale = 1.0 / sqrt(this->x * this->x + this->y * this->y + this->z * this->z);
-    return Vector3(this->x / normal_scale, this->y / normal_scale, this->z / normal_scale);
+    float normal_scale = 1.0 / this->magnitude();
+    return *this / normal_scale;
 }
 
 float Vector3::magnitude()
@@ -77,9 +77,14 @@ void Vector3::operator/=(const Vector3 &vector)
 }
 
 bool Vector3::operator==(const Vector3 &vector) const {
-    return x == vector.x && y == vector.y && z == vector.z;
+    Vector3 one = *this;
+    one = one.normalize();
+    Vector3 other = vector;
+    other = other.normalize();
+
+    return one.x == other.x && one.y == other.y && one.z == other.z;
 }
 
 bool Vector3::operator!=(const Vector3 &vector) const {
-    return x != vector.x || y != vector.y || z != vector.z;
+    return !(*this == vector);
 } 

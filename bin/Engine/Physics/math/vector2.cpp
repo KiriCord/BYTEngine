@@ -8,8 +8,8 @@ Vector2::Vector2(float num) : x(num), y(num) {}
 
 Vector2 Vector2::normalize()
 {
-    float normal_scale = 1.0 / sqrt(this->x * this->x + this->y * this->y);
-    return Vector2(this->x / normal_scale, this->y / normal_scale);
+    float normal_scale = 1.0 / this->magnitude();
+    return *this / normal_scale;
 }
 
 float Vector2::magnitude()
@@ -71,11 +71,16 @@ void Vector2::operator/=(const Vector2 &vector)
 }
 
 bool Vector2::operator==(const Vector2 &vector) const {
-    return x == vector.x && y == vector.y;
+    Vector2 one = *this;
+    one = one.normalize();
+    Vector2 other = vector;
+    other = other.normalize();
+
+    return one.x == other.x && one.y == other.y;
 }
 
 bool Vector2::operator!=(const Vector2 &vector) const {
-    return x != vector.x || y != vector.y;
+    return !(*this == vector);
 } 
 
 /*Vector2 Vector2::rotate(float degree){      Moved rotate to transform
