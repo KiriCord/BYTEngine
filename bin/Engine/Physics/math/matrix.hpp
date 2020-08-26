@@ -15,4 +15,7 @@ class Matrix {
     Vector2 getRow(int value) const;
     Vector2 getColumn(int value) const;
     Vector2 getMainDiagonal() const;
+
+    Vector2 setRow(int value) const;
+    Vector2 setColumn(int value) const;
 };

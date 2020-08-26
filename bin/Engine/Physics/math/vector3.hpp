@@ -31,6 +31,9 @@ struct Vector3
 	void operator-=(const Vector3& vector);
 	void operator*=(const Vector3& vector);
 	void operator/=(const Vector3& vector);
+
+    //Vector3 by num
+    Vector3 operator*(const float& num) const;
     
     //Boolean
     bool operator==(const Vector3& vector) const;

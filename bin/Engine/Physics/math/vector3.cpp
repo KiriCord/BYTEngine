@@ -1,4 +1,5 @@
 #include "vector3.hpp"
+#include <math.h>
 
 Vector3::Vector3() : x(0), y(0), z(0) {}
 
@@ -75,6 +76,14 @@ void Vector3::operator/=(const Vector3 &vector)
     y /= vector.y;
     z /= vector.z;
 }
+
+//Vector3 by num
+
+Vector3 Vector3::operator*(const float& num) const
+{
+    return Vector3(x * num, y * num, z * num);
+}
+
 
 bool Vector3::operator==(const Vector3 &vector) const {
     Vector3 one = *this;

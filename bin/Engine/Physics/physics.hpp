@@ -1,29 +1,31 @@
+#include "vector3.hpp"
+
 class Physics 
 {
     // TODO REMOVE FCKG FLOATS WITH VECTORS 3D!!!!!!!!!!!!!!!!!!!!!!!!!
     float G;
-    float g;
+    Vector3 g;
     float M;
-    float friction;
-    float elasticity;
+    Vector3 friction;
+    Vector3 elasticity;
 
     public:
 
-    Physics(double primary_mass, double secondary_mass, double distance, double force, double _friction, double elast) {
+    Physics(float primary_mass, float secondary_mass, float distance, Vector3 force, Vector3 _friction, Vector3 elast) {
         M = primary_mass;
-        G = (force * distance*distance)/(M*secondary_mass);
+        G = (force * distance*distance)/(M*secondary_mass); //TODO CONVERT TO VECTOR3
         g = G * M/(distance*distance);
         friction = _friction;
         elasticity = elast;
     }
     ~Physics();
 
-    float gOverNMeter(double radius, double meter) {
+    Vector3 gOverNMeter(float radius, float meter) {
         return G*M/((radius+meter)*(radius+meter));
     }
 
-    float P(double mass) {
-        return mass * g;
+    Vector3 P(float mass) {
+        return g * mass;
     }
     
     void registerCollider();    //rigitbody in parameters
