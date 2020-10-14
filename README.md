@@ -34,3 +34,7 @@ Any advices, help, something else you can drop in issues or you can fork this re
 
 > to show Kuzka's mother to someone 
 > - © Nikita Khrushchev
+
+## Creators
+Kuznetsov Matvey, Rakhmanov Artur, Gaisin Iskander. Group 37.
+14/10/2020
