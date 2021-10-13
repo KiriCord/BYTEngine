@@ -16,7 +16,7 @@ At least, nothing yet. But it will grow!
 + Makefile
 + C++
 + A little bit magic
-+ and Google (of corse, how without it?)
++ and Google (of course, how without it?)
 
 ## Our plans
 
@@ -34,7 +34,3 @@ Any advices, help, something else you can drop in issues or you can fork this re
 
 > to show Kuzka's mother to someone 
 > - © Nikita Khrushchev
-
-## Creators
-Kuznetsov Matvey, Rakhmanov Artur, Gaisin Iskander. Group 37.
-14/10/2020
