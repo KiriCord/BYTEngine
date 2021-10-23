@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "bin/Engine/Physics/math/vector2.hpp"
+#include "Math/Vector2.hpp"
 
 class GameObject
 {

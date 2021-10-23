@@ -1,5 +1,5 @@
-#include "vector2.hpp"
-#include "vector3.hpp"
+#include "Vector2.hpp"
+#include "Vector3.hpp"
 
 class Matrix {
     //float matrix[2];

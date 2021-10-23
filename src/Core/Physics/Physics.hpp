@@ -1,4 +1,4 @@
-#include "vector3.hpp"
+#include "Vector3.hpp"
 
 class Physics 
 {
@@ -13,8 +13,8 @@ class Physics
 
     Physics(float primary_mass, float secondary_mass, float distance, Vector3 force, Vector3 _friction, Vector3 elast) {
         M = primary_mass;
-        G = (force * distance*distance)/(M*secondary_mass); //TODO CONVERT TO VECTOR3
-        g = G * M/(distance*distance);
+        //G = (force * distance*distance)/(M*secondary_mass); //TODO CONVERT TO VECTOR3
+        //g = G * M/(distance*distance);
         friction = _friction;
         elasticity = elast;
     }

@@ -1,4 +1,4 @@
-#include "matrix.hpp"
+#include "Matrix.hpp"
 
 Matrix::Matrix() {}
 
