@@ -7,15 +7,15 @@ class Matrix {
     //static Matrix
 
     public:
-    void invert();
-    void transpose();
-    void orthonormalization();
-    float determinant();
+    void Invert();
+    void Transpose();
+    void Orthonormalization();
+    float Determinant();
 
-    Vector2 getRow(int value) const;
-    Vector2 getColumn(int value) const;
-    Vector2 getMainDiagonal() const;
+    Vector2 GetRow(int value) const;
+    Vector2 GetColumn(int value) const;
+    Vector2 GetMainDiagonal() const;
 
-    Vector2 setRow(int value) const;
-    Vector2 setColumn(int value) const;
+    Vector2 SetRow(int value) const;
+    Vector2 SetColumn(int value) const;
 };

@@ -7,13 +7,13 @@ Vector3::Vector3(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {}
 
 Vector3::Vector3(float num) : x(num), y(num), z(num) {}
 
-Vector3 Vector3::normalize()
+Vector3 Vector3::Normalize()
 {
-    float normal_scale = 1.0 / this->magnitude();
+    float normal_scale = 1.0 / this->Magnitude();
     return *this / normal_scale;
 }
 
-float Vector3::magnitude()
+float Vector3::Magnitude()
 {
     return sqrt(x * x + y * y + z * z);
 }
@@ -87,9 +87,9 @@ Vector3 Vector3::operator*(const float& num) const
 
 bool Vector3::operator==(const Vector3 &vector) const {
     Vector3 one = *this;
-    one = one.normalize();
+    one = one.Normalize();
     Vector3 other = vector;
-    other = other.normalize();
+    other = other.Normalize();
 
     return one.x == other.x && one.y == other.y && one.z == other.z;
 }

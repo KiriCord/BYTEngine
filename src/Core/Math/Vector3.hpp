@@ -14,9 +14,9 @@ struct Vector3
 
     Vector3(float _num);
 
-    Vector3 normalize();
+    Vector3 Normalize();
 
-    float magnitude();
+    float Magnitude();
     
 // funtions
     Vector3 Vectormulty(const Vector3& vector1, const Vector3& vector2);

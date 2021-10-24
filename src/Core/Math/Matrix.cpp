@@ -2,10 +2,10 @@
 
 Matrix::Matrix() {}
 
-void Matrix::orthonormalization() {}
+void Matrix::Orthonormalization() {}
 
-void Matrix::invert() {}
+void Matrix::Invert() {}
 
-void Matrix::transpose() {}
+void Matrix::Transpose() {}
 
-float Matrix::determinant() {}
+float Matrix::Determinant() {}

@@ -6,13 +6,13 @@ Vector2::Vector2(float _x, float _y) : x(_x), y(_y) {}
 
 Vector2::Vector2(float num) : x(num), y(num) {}
 
-Vector2 Vector2::normalize()
+Vector2 Vector2::Normalize()
 {
-    float normal_scale = 1.0 / this->magnitude();
+    float normal_scale = 1.0 / this->Magnitude();
     return *this / normal_scale;
 }
 
-float Vector2::magnitude()
+float Vector2::Magnitude()
 {
     return sqrt(x * x + y * y);
 }
@@ -72,9 +72,9 @@ void Vector2::operator/=(const Vector2 &vector)
 
 bool Vector2::operator==(const Vector2 &vector) const {
     Vector2 one = *this;
-    one = one.normalize();
+    one = one.Normalize();
     Vector2 other = vector;
-    other = other.normalize();
+    other = other.Normalize();
 
     return one.x == other.x && one.y == other.y;
 }

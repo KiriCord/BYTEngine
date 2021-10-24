@@ -14,9 +14,9 @@ public:
 
     Vector2(float _num);
 
-    Vector2 normalize();
+    Vector2 Normalize();
 
-    float magnitude();
+    float Magnitude();
 
     // Functions 
     float Scalarmulty (const Vector2& vector1, const Vector2& vector2);
