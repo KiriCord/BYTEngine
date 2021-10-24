@@ -1,6 +1,7 @@
 #pragma onсe
 
 #include "Vector2.hpp"
+#include "Quaternion.hpp"
 #include <math.h>
 
 class Transform
@@ -21,9 +22,12 @@ class Transform
     Transform &Scale(const Vector2 &scale);
     Transform &Translate(const Vector2 &position);
 
-    Transform &SetPosition(const Vector2 &position);
-    Transform &SetScale(const Vector2 &scale);
-    Transform &SetRotation(const Vector2 &axis, float angle);
+    void SetPosition(const Vector2 &position);
+    
+    template <typename T>
+    void SetPosition(const Quaternion<T>& rotate);
+    void SetScale(const Vector2 &scale);
+    void SetRotation(const Vector2 &axis, float angle);
     
     Vector2 GetPosition() const;
     Vector2 GetScale() const;
